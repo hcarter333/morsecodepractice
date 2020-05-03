@@ -6,14 +6,15 @@ table, th, td {
   border: 1px solid black;
   text-align: center;
   table-layout: fixed;
+  font-size:60px;
+  line-height: 0px;
+  border-collapse: collapse;
 }
-tr { line-height: 10px; }
 p{
-font-size:120px;
-color:pink;
+color:blue;
 }
 .credit{
-font-size:12px;
+font-size:24px;
 color:black;
 }
 </style>
@@ -28,45 +29,60 @@ color:black;
 <td><p id= "d" onclick="myFunction('d')" >D</p></td>
 <td><p id= "e" onclick="myFunction('e')" >E</p></td>
 <td><p id= "f" onclick="myFunction('f')" >F</p></td>
-</tr><tr>
 <td><p id= "g" onclick="myFunction('g')" >G</p></td>
 <td><p id= "h" onclick="myFunction('h')" >H</p></td>
 <td><p id= "i" onclick="myFunction('i')" >I</p></td>
 <td><p id= "j" onclick="myFunction('j')" >J</p></td>
+</tr><tr>
 <td><p id= "k" onclick="myFunction('k')" >K</p></td>
 <td><p id= "l" onclick="myFunction('l')" >L</p></td>
-</tr><tr>
 <td><p id= "m" onclick="myFunction('m')" >M</p></td>
 <td><p id= "n" onclick="myFunction('n')" >N</p></td>
 <td><p id= "o" onclick="myFunction('o')" >O</p></td>
 <td><p id= "p" onclick="myFunction('p')" >P</p></td>
 <td><p id= "q" onclick="myFunction('q')" >Q</p></td>
 <td><p id= "r" onclick="myFunction('r')" >R</p></td>
-</tr><tr>
 <td><p id= "s" onclick="myFunction('s')" >S</p></td>
 <td><p id= "t" onclick="myFunction('t')" >T</p></td>
+</tr><tr>
 <td><p id= "u" onclick="myFunction('u')" >U</p></td>
 <td><p id= "v" onclick="myFunction('v')" >V</p></td>
 <td><p id= "w" onclick="myFunction('w')" >W</p></td>
 <td><p id= "x" onclick="myFunction('x')" >X</p></td>
-</tr><tr>
 <td><p id= "y" onclick="myFunction('y')" >Y</p></td>
 <td><p id= "z" onclick="myFunction('z')" >Z</p></td>
-
+</tr><tr>
+<td><p id= "period" onclick="myFunction('period')" >.</p></td>
+<td><p id= "comma" onclick="myFunction('comma')" >,</p></td>
+<td><p id= "question" onclick="myFunction('question')" >?</p></td>
+<td><p id= "slant" onclick="myFunction('slant')" >/</p></td>
+<td><p id= "dash" onclick="myFunction('dash')" >-</p></td>
+</tr><tr>
+<td><p id= "0" onclick="myFunction('0')" >0</p></td>
+<td><p id= "1" onclick="myFunction('1')" >1</p></td>
+<td><p id= "2" onclick="myFunction('2')" >2</p></td>
+<td><p id= "3" onclick="myFunction('3')" >3</p></td>
+<td><p id= "4" onclick="myFunction('4')" >4</p></td>
+<td><p id= "5" onclick="myFunction('5')" >5</p></td>
+<td><p id= "6" onclick="myFunction('6')" >6</p></td>
+<td><p id= "7" onclick="myFunction('7')" >7</p></td>
+<td><p id= "8" onclick="myFunction('8')" >8</p></td>
+<td><p id= "9" onclick="myFunction('9')" >9</p></td>
 </tr>
 </table>
-
+<p class="credit"></p>
+<p class="credit"></p>
+<p class="credit"></p>
 <p class="credit">Letter sounds from <a href="http://www.arrl.org/code-characters">ARRL</a></p>
 
 </body>
 </html>
 
 <script>
-var myel;
 
 function myFunction(letter) {
   document.getElementById(letter).style.color = 'red'
   new Audio('http://www.arrl.org/files/file/Morse/Characters/' + letter + '.mp3').play();
-  setTimeout(function(){ document.getElementById(letter).style.color = 'pink'; }, 1000);
+  setTimeout(function(){ document.getElementById(letter).style.color = 'blue'; }, 1000);
 }
 </script>
